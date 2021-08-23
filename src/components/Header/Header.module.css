@@ -1,0 +1,27 @@
+#header {
+	height: 8rem;
+	background-color: cornflowerblue;
+	display: flex;
+	position: relative;
+}
+
+.nameContainer {
+	position: relative;
+	align-self: flex-start;
+	margin-left: 3rem;
+	margin-top: 1rem;
+}
+
+.title {
+	font-weight: bold;
+	font-family: "Poppins", sans-serif;
+	font-size: 3.5rem;
+}
+
+.title-sub {
+	font-family: "Open Sans Condensed", sans-serif;
+	position: absolute;
+	right: 6%;
+	top: 80%;
+	font-size: 2rem;
+}
