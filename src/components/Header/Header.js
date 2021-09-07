@@ -11,6 +11,8 @@ const Header = () => {
 		setOpen(!open);
 	};
 
+	const openStyles = styles.openButton + ' ' + styles.flip;
+
 	return (
 		<header id={styles.header}>
 			<Menu openMenu={open} />
@@ -23,7 +25,7 @@ const Header = () => {
 			</div>
 			<FontAwesomeIcon
 				icon={faChevronDown}
-				className={styles.openButton}
+				className={open ? openStyles : styles.openButton}
 				onClick={toggleOpen}
 			/>
 		</header>

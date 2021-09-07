@@ -1,8 +1,6 @@
-
-
 #header {
 	--bg: black;
-	--font: white;	
+	--font: white;
 	position: relative;
 	background-color: var(--bg);
 }
@@ -25,27 +23,30 @@
 
 .title {
 	font-weight: bold;
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 3.5rem;
 }
 
 .title-sub {
-	font-family: "Open Sans Condensed", sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	position: absolute;
 	right: 6%;
 	top: 80%;
 	font-size: 2rem;
 }
 
-
-
 .openButton {
 	position: absolute;
 	cursor: pointer;
 	bottom: 0;
 	left: 50%;
+	transition: all 200ms ease-in-out;
 	transform: translateX(-50%);
 	font-size: 2rem;
 	color: white;
 	padding: 10px 15px 5px 15px;
+}
+
+.flip {
+	transform: rotateX(180deg) translateX(-50%);
 }
